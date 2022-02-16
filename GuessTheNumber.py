@@ -41,7 +41,6 @@ def start_game(random_number, attempts):
         return start_game(random_number, attempts)
 
 #loop that resets until the correct answer is input, also tracks attempts
-#Try block not catching the Errorm idk
 def guess(player_guess, random_number, attempts): 
    
     attempts = attempts + 1
