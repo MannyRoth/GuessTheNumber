@@ -32,10 +32,10 @@ def start_game(random_number, attempts):
             return guess(player_guess,random_number,attempts)
         elif answer == "n" or answer =="no":
             print('Maybe next time!')
-            return(start_game(random_number))
+            return(start_game(random_number,attempts ))
         else:
             print('Please type Yes or No')    
-            return(start_game(random_number))
+            return(start_game(random_number,attempts))
     except ValueError:
         print('Please type a number')
         return start_game(random_number, attempts)
